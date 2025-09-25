@@ -1,22 +1,23 @@
 import { useContext, useState } from "react";
-import "./LoginForm.css";
+import { useNavigate } from 'react-router-dom';
+import { useDispatch, useSelector } from "react-redux";
+import { setName, setEmail, setPassword } from "../../Redux/LoginFormSlice";
+import './LoginForm.css';
 
-import { useNavigate } from "react-router-dom";
-import { CreateContext } from "../UseContext/CreateContext";
+
 
 const LoginForm = () => {
 
-    const [password, setPassword] = useState("");
 
     const navigate = useNavigate();
-    const { email, setEmail, name, setName } = useContext(CreateContext)
+    const dispatch = useDispatch();
 
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        navigate("/Home")
 
         alert("Login Submitted!");
+        navigate("/Home")
 
     };
 
@@ -32,8 +33,8 @@ const LoginForm = () => {
                         <input
                             type="text"
                             placeholder="Enter your name"
-                            value={name}
-                            onChange={(e) => setName(e.target.value)}
+
+                            onChange={(e) => dispatch(setName(e.target.value))}
                             required
                         />
                     </div>
@@ -43,8 +44,8 @@ const LoginForm = () => {
                         <input
                             type="email"
                             placeholder="Enter your email"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
+
+                            onChange={(e) => dispatch(setEmail(e.target.value))}
                             required
                         />
                     </div>
@@ -54,8 +55,8 @@ const LoginForm = () => {
                         <input
                             type="password"
                             placeholder="Enter your password"
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
+
+                            onChange={(e) => dispatch(setPassword(e.target.value))}
                             required
                         />
                     </div>
