@@ -41,3 +41,47 @@ h3 {
   -webkit-text-fill-color: transparent;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
+.navbar {
+  display: flex;
+  justify-content: space-between; /* space between title and links */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ff5722; /* Zepto-style orange */
+  color: white;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.navbar h3 {
+  margin: 0;
+}
+
+/* Remove default list style and make horizontal */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* space between links */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.nav-links li a:hover {
+  color: #fff9f0; /* lighter on hover */
+}
+
+/* Optional: balance div styling */
+.balance {
+  font-weight: 600;
+  margin-left: 20px;
+}
