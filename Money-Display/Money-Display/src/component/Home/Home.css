@@ -64,3 +64,97 @@
   object-fit: cover;
   border-radius: 2px;
 }
+
+/* Style for Add button */
+.currency-item button {
+  background-color: #4caf50; /* green */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.currency-item button:hover {
+  background-color: #45a049;
+}
+
+/* Counter container */
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Counter buttons (+ / -) */
+.counter button {
+  background-color: #2196f3; /* blue */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.counter button:hover {
+  background-color: #1976d2;
+}
+
+/* Quantity number */
+.counter span {
+  font-size: 16px;
+  font-weight: 600;
+  min-width: 20px;
+  text-align: center;
+}
+
+
+/* Center only the cart container */
+.cart-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0; /* space below items */
+}
+
+/* View Cart button style */
+.view-cart-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.view-cart-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+/* Badge for number of items */
+.cart-badge {
+  background-color: #fff;
+  color: #ff5722;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 12px;
+  min-width: 24px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
