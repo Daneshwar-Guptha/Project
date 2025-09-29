@@ -32,7 +32,8 @@ const MoneyBalancerSlice = createSlice({
             if (state.cart[id] > 0) {
                 state.BalanceMoney += price;
                 state.cart[id] -= 1;
-            }
+            }  
+            
         },
     },
 });
