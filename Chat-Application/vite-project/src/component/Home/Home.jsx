@@ -3,6 +3,7 @@ import { CreateContext } from "../UseContext/CreateContext";
 
 const Home = ()=>{
     const{name,email} = useContext(CreateContext)
+    debugger
     return(
        <>
         <h1>{name}</h1>

@@ -25,6 +25,7 @@ const Home = () => {
             <div className="currency-container">
                 {currencyDetails.map((eachItem) => {
                     const quantity = cart[eachItem.id] || 0;
+                    console.log(quantity)
 
 
                     return (
