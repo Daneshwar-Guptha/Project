@@ -17,6 +17,7 @@ const LoginForm = () => {
         navigate("/Home")
 
         alert("Login Submitted!");
+        console.log("Hi");
 
     };
 
